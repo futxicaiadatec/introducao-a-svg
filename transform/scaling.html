@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="../base.css" />
+    <style>
+      svg {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>P42 Nuvem, Introdução a SVG</h1>
+
+    <h2>Rectangle</h2>
+    <ul class="links">
+      <li class="link">
+        <a href="/index.html">Voltar</a>
+      </li>
+    </ul>
+
+    <svg viewBox="-50 -50 100 100" xmlns="http://www.w3.org/2000/svg">
+      <!-- uniform scale -->
+      <circle cx="0" cy="0" r="10" fill="red" transform="scale(4)" />
+
+      <!-- vertical scale -->
+      <circle cx="0" cy="0" r="10" fill="yellow" transform="scale(1,4)" />
+
+      <!-- horizontal scale -->
+      <circle cx="0" cy="0" r="10" fill="pink" transform="scale(4,1)" />
+
+      <!-- No scale -->
+      <circle cx="0" cy="0" r="10" fill="black" />
+    </svg>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="../base.css" />
+    <style>
+      svg {
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>P42 Nuvem, Introdução a SVG</h1>
+
+    <h2>Rectangle</h2>
+    <ul class="links">
+      <li class="link">
+        <a href="/index.html">Voltar</a>
+      </li>
+    </ul>
+
+    <svg
+      viewBox="-40 0 150 100"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <g
+        fill="grey"
+        transform="rotate(-10 50 100)
+                    translate(-36 45.5)
+                    skewX(40)
+                    scale(1 0.5)"
+      >
+        <path
+          id="heart"
+          d="M 10,30 A 20,20 0,0,1 50,30 A 20,20 0,0,1 90,30 Q 90,60 50,90 Q 10,60 10,30 z"
+        />
+      </g>
+
+      <use xlink:href="#heart" fill="none" stroke="red" />
+    </svg>
+  </body>
+</html>

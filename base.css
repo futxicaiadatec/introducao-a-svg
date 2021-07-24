@@ -1,0 +1,13 @@
+body {
+  background: #eeeeee;
+}
+
+.links {
+  display: flex;
+  list-style-type: none;
+}
+
+.link {
+  margin: 0 5px;
+  font-size: 1.3rem;
+}

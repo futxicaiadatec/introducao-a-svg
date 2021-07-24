@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link rel="stylesheet" href="../base.css" />
+  </head>
+  <body>
+    <h1>P42 Nuvem, Introdução a SVG</h1>
+
+    <h2>Stroke</h2>
+    <ul class="links">
+      <li class="link">
+        <a href="/index.html">Voltar</a>
+      </li>
+    </ul>
+
+    <svg viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
+      <!-- Simple color stroke -->
+      <circle cx="5" cy="5" r="4" fill="none" stroke="green" />
+
+      <!-- Stroke a circle with a gradient -->
+      <defs>
+        <linearGradient id="myGradient">
+          <stop offset="0%" stop-color="green" />
+          <stop offset="100%" stop-color="white" />
+        </linearGradient>
+      </defs>
+
+      <circle cx="15" cy="5" r="4" fill="none" stroke="url(#myGradient)" />
+    </svg>
+  </body>
+</html>
